@@ -18,7 +18,7 @@ conexion.connect(function(error){
     if(error){
         throw error
     }else{
-        console.log("¡Conexión exitosa a la base de datos!")
+        console.log("¡Conexión exitosa a la base de datos!!!")
     }
 })
 app.get('/', function(req,res){
@@ -85,5 +85,5 @@ app.delete('/api/contacto/:id', (req,res)=>{
 })
 const puerto = process.env.PUERTO || 3000
 app.listen(puerto, function(){
-    console.log("Servidor Ok en puerto:"+puerto)
+    console.log("Servidor Positivo en puerto:"+puerto)
 })
